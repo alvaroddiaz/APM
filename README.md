@@ -6,6 +6,7 @@
   - Alexandre Pérez Paredes - COO
   - Pedro Vales Dapena - CTO
 
+  Posteriormente se indican las funcionalidades de las que son responsables entre paréntesis.
 
 - **Descripción**:
   
@@ -13,19 +14,21 @@ Nuestro proyecto consiste en una aplicación móvil que facilite y mejore la ges
 
 - **Funcionalidades principales**:
 
-  - Escáner de facturas y recibos mediante la cámara del dipositivo.
-  - Categorización de gastos.
-  - Creación de grupos de gastos.
-
+  - Interfaz intuitiva, sencilla y agradable al usuario. (CXO)
+  - Escáner de facturas y recibos mediante la cámara del dipositivo. (CTO)
+  - Categorización de gastos. (CTO, COO, CEO)*
+  - Creación de grupos de gastos. (COO)
     p.e.: viajes, gastos hogar, gastos compra...
-  - Geolocalización de gastos para la construcción de un mapa de gastos.
+  - Geolocalización de gastos para la construcción de un mapa de gastos. (CTO)
 
 - **Funcionalidades secundarias**:
 
-  - Creación de gráficos y resumenes sobre los gastos.
-  - Exportar los datos en los principales formatos (json, csv, excel...)
-  - Confirmar y editar resultados del escaneado.
-  - Añadir gastos manualmente.
-  - Reparto de gastos.
+  - Creación de gráficos y resumenes sobre los gastos. (CEO)
+  - Exportar los datos en los principales formatos (json, csv, excel...). (CEO)
+  - Confirmar y editar resultados del escaneado. (CEO)
+  - Añadir gastos manualmente. (CEO)
+  - Reparto de gastos. (COO)
+
+*Se indican 3 perfiles asignados debido a que es una funcionalidad transversal que implica el uso de tecnologías no-Android y una buena validación funcional y tests por ser una de las funcionalidades más delicadas del sistema.
 
     
