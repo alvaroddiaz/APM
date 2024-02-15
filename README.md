@@ -16,8 +16,9 @@ Nuestro proyecto consiste en una aplicación móvil que facilite y mejore la ges
 
   - Interfaz intuitiva, sencilla y agradable al usuario. (CXO)
   - Escáner de facturas y recibos mediante la cámara del dipositivo. (CTO)
-  - Categorización de gastos. (CTO, COO, CEO)*
+  - Categorización de gastos. (CTO, COO y CEO)*
   - Creación de grupos de gastos. (COO)
+
     p.e.: viajes, gastos hogar, gastos compra...
   - Geolocalización de gastos para la construcción de un mapa de gastos. (CTO)
 
@@ -25,7 +26,7 @@ Nuestro proyecto consiste en una aplicación móvil que facilite y mejore la ges
 
   - Creación de gráficos y resumenes sobre los gastos. (CEO)
   - Exportar los datos en los principales formatos (json, csv, excel...). (CEO)
-  - Confirmar y editar resultados del escaneado. (CEO)
+  - Confirmar y editar resultados del escaneado. (CXO y CEO)
   - Añadir gastos manualmente. (CEO)
   - Reparto de gastos. (COO)
 
