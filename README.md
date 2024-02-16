@@ -18,18 +18,21 @@ Nuestro proyecto consiste en una aplicación móvil que facilite y mejore la ges
   - Escáner de facturas y recibos mediante la cámara del dipositivo. (CTO)
   - Categorización de gastos. (CTO, COO y CEO)*
   - Creación de grupos de gastos. (COO)
+  - Añadir gastos manualmente. (CEO)
 
     p.e.: viajes, gastos hogar, gastos compra...
   - Geolocalización de gastos para la construcción de un mapa de gastos. (CTO)
 
 - **Funcionalidades secundarias**:
 
-  - Creación de gráficos y resumenes sobre los gastos. (CEO)
+  - Creación de gráficos y resúmenes sobre los gastos. (CEO)
   - Exportar los datos en los principales formatos (json, csv, excel...). (CEO)
   - Confirmar y editar resultados del escaneado. (CXO y CEO)
-  - Añadir gastos manualmente. (CEO)
   - Reparto de gastos. (COO)
 
 *Se indican 3 perfiles asignados debido a que es una funcionalidad transversal que implica el uso de tecnologías no-Android y una buena validación funcional y tests por ser una de las funcionalidades más delicadas del sistema.
 
     
+- **Target**:
+
+
