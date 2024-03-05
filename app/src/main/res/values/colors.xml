@@ -2,5 +2,6 @@
 <resources>
     <color name="fondo">#313131</color>
     <color name="naranjaPrimario">#fc7e26</color>
+    <color name="naranjaOscuro">#8F4816</color>
     <color name="blancoPrimario">#ffebde</color>
 </resources>
