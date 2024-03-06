@@ -44,4 +44,9 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="categorias">Categorías</string>
+    <string name="personal">Personal</string>
+    <string name="grupos">Grupos</string>
+    <string name="anadir_nuevo_grupo">Añadir nuevo grupo</string>
+    <string name="anadir_nuevo_gasto_grupal">añadir nuevo gasto grupal</string>
+    <string name="volver">volver</string>
 </resources>

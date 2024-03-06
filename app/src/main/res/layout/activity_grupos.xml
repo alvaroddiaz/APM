@@ -27,12 +27,12 @@
             android:backgroundTint="@color/naranjaPrimario"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:text="Personal"
+            android:text="@string/personal"
             tools:layout_editor_absoluteX="50dp"
             tools:layout_editor_absoluteY="68dp"
             android:layout_marginTop="3dp"
             android:layout_marginBottom="3dp"
-            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
             />
 
         <Space
@@ -42,13 +42,13 @@
             android:id="@+id/button2"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:text="Grupos"
+            android:text="@string/grupos"
             tools:layout_editor_absoluteX="188dp"
             tools:layout_editor_absoluteY="69dp"
             android:enabled="false"
             android:layout_marginTop="3dp"
             android:layout_marginBottom="3dp"
-            android:layout_marginRight="6dp"
+            android:layout_marginEnd="6dp"
             android:textColor="@color/blancoPrimario"
             />
 
@@ -80,7 +80,6 @@
                 app:cardElevation="8dp">
 
                 <GridLayout
-                    android:id="@+id/gridLayout"
                     android:layout_width="match_parent"
                     android:layout_height="fill_parent"
                     android:columnCount="2"
@@ -103,10 +102,10 @@
                         android:textColor="@color/blancoPrimario"
                         android:textSize="20sp"
                         android:textStyle="bold"
-                        android:layout_marginLeft="20sp"
+                        android:layout_marginStart="20sp"
                         />
                     <TextView
-                        android:id="@+id/titulo"
+                        android:id="@+id/participantes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -114,13 +113,13 @@
                         android:layout_row="1"
                         android:layout_column="0"
                         android:textColor="@color/blancoPrimario"
-                        android:textSize="10sp"
+                        android:textSize="11sp"
                         android:textStyle="bold"
-                        android:layout_marginLeft="20sp"
+                        android:layout_marginStart="20sp"
                         />
 
                     <TextView
-                        android:id="@+id/titulo"
+                        android:id="@+id/gasto"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -130,7 +129,7 @@
                         android:textColor="@color/blancoPrimario"
                         android:textSize="20sp"
                         android:textStyle="bold"
-                        android:layout_marginLeft="20sp"
+                        android:layout_marginStart="20sp"
                         />
 
                     <LinearLayout
@@ -140,25 +139,25 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp">
                         <TextView
-                            android:id="@+id/titulo"
+                            android:id="@+id/balance_txt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Balance:"
                             android:textColor="@color/blancoPrimario"
                             android:textSize="15sp"
                             android:textStyle="bold"
-                            android:layout_marginLeft="20sp"
+                            android:layout_marginStart="20sp"
                             />
                         <TextView
-                            android:id="@+id/titulo"
+                            android:id="@+id/balance"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="XXX.XX€"
                             android:textColor="@color/blancoPrimario"
                             android:textSize="15sp"
                             android:textStyle="bold"
-                            android:layout_marginLeft="1sp"
-                            android:layout_marginRight="5sp"
+                            android:layout_marginStart="1sp"
+                            android:layout_marginEnd="5sp"
                             />
                     </LinearLayout>
 
@@ -177,7 +176,7 @@
                         android:layout_row="0"
                         android:layout_rowSpan="4"
                         android:layout_column="1"
-                        android:layout_marginLeft="-1dp"
+                        android:layout_marginStart="-1dp"
                         app:layout_constraintEnd_toEndOf="parent">
 
                         <View
@@ -202,7 +201,6 @@
                 app:cardElevation="8dp">
 
                 <GridLayout
-                    android:id="@+id/gridLayout"
                     android:layout_width="match_parent"
                     android:layout_height="fill_parent"
                     android:columnCount="2"
@@ -215,7 +213,7 @@
 
 
                     <TextView
-                        android:id="@+id/titulo"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="7dp"
@@ -225,10 +223,10 @@
                         android:textColor="@color/blancoPrimario"
                         android:textSize="20sp"
                         android:textStyle="bold"
-                        android:layout_marginLeft="20sp"
+                        android:layout_marginStart="20sp"
                         />
                     <TextView
-                        android:id="@+id/titulo"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -236,13 +234,13 @@
                         android:layout_row="1"
                         android:layout_column="0"
                         android:textColor="@color/blancoPrimario"
-                        android:textSize="15sp"
+                        android:textSize="11sp"
                         android:textStyle="bold"
-                        android:layout_marginLeft="30sp"
+                        android:layout_marginStart="30sp"
                         />
 
                     <TextView
-                        android:id="@+id/titulo"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -252,7 +250,7 @@
                         android:textColor="@color/blancoPrimario"
                         android:textSize="20sp"
                         android:textStyle="bold"
-                        android:layout_marginLeft="20sp"
+                        android:layout_marginStart="20sp"
                         />
 
                     <LinearLayout
@@ -262,25 +260,25 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp">
                         <TextView
-                            android:id="@+id/titulo"
+
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Balance:"
                             android:textColor="@color/blancoPrimario"
                             android:textSize="15sp"
                             android:textStyle="bold"
-                            android:layout_marginLeft="20sp"
+                            android:layout_marginStart="20sp"
                             />
                         <TextView
-                            android:id="@+id/titulo"
+
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="XXX.XX€"
                             android:textColor="@color/blancoPrimario"
                             android:textSize="15sp"
                             android:textStyle="bold"
-                            android:layout_marginLeft="1sp"
-                            android:layout_marginRight="5sp"
+                            android:layout_marginStart="1sp"
+                            android:layout_marginEnd="5sp"
                             />
                     </LinearLayout>
 
@@ -299,7 +297,7 @@
                         android:layout_row="0"
                         android:layout_rowSpan="4"
                         android:layout_column="1"
-                        android:layout_marginLeft="-1dp"
+                        android:layout_marginStart="-1dp"
                         app:layout_constraintEnd_toEndOf="parent">
 
                         <View
@@ -324,7 +322,6 @@
                 app:cardElevation="8dp">
 
                 <GridLayout
-                    android:id="@+id/gridLayout"
                     android:layout_width="match_parent"
                     android:layout_height="fill_parent"
                     android:columnCount="2"
@@ -337,7 +334,7 @@
 
 
                     <TextView
-                        android:id="@+id/titulo"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="7dp"
@@ -347,10 +344,10 @@
                         android:textColor="@color/blancoPrimario"
                         android:textSize="20sp"
                         android:textStyle="bold"
-                        android:layout_marginLeft="20sp"
+                        android:layout_marginStart="20sp"
                         />
                     <TextView
-                        android:id="@+id/titulo"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -358,13 +355,13 @@
                         android:layout_row="1"
                         android:layout_column="0"
                         android:textColor="@color/blancoPrimario"
-                        android:textSize="15sp"
+                        android:textSize="11sp"
                         android:textStyle="bold"
-                        android:layout_marginLeft="30sp"
+                        android:layout_marginStart="30sp"
                         />
 
                     <TextView
-                        android:id="@+id/titulo"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -374,7 +371,7 @@
                         android:textColor="@color/blancoPrimario"
                         android:textSize="20sp"
                         android:textStyle="bold"
-                        android:layout_marginLeft="20sp"
+                        android:layout_marginStart="20sp"
                         />
 
                     <LinearLayout
@@ -384,25 +381,25 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp">
                         <TextView
-                            android:id="@+id/titulo"
+
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Balance:"
                             android:textColor="@color/blancoPrimario"
                             android:textSize="15sp"
                             android:textStyle="bold"
-                            android:layout_marginLeft="20sp"
+                            android:layout_marginStart="20sp"
                             />
                         <TextView
-                            android:id="@+id/titulo"
+
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="XXX.XX€"
                             android:textColor="@color/blancoPrimario"
                             android:textSize="15sp"
                             android:textStyle="bold"
-                            android:layout_marginLeft="1sp"
-                            android:layout_marginRight="5sp"
+                            android:layout_marginStart="1sp"
+                            android:layout_marginEnd="5sp"
                             />
                     </LinearLayout>
 
@@ -421,7 +418,7 @@
                         android:layout_row="0"
                         android:layout_rowSpan="4"
                         android:layout_column="1"
-                        android:layout_marginLeft="-1dp"
+                        android:layout_marginStart="-1dp"
                         app:layout_constraintEnd_toEndOf="parent">
 
                         <View
@@ -435,128 +432,6 @@
 
                 </GridLayout>
             </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_gravity="fill"
-            android:layout_margin="8dp"
-            app:cardBackgroundColor="@color/naranjaPrimario"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp">
-
-            <GridLayout
-                android:id="@+id/gridLayout"
-                android:layout_width="match_parent"
-                android:layout_height="fill_parent"
-                android:columnCount="2"
-                android:rowCount="4"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="parent"
-                app:layout_constraintVertical_bias="0.292">
-
-
-                <TextView
-                    android:id="@+id/titulo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="7dp"
-                    android:text="Título"
-                    android:layout_row="0"
-                    android:layout_column="0"
-                    android:textColor="@color/blancoPrimario"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="20sp"
-                    />
-                <TextView
-                    android:id="@+id/titulo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp"
-                    android:text="Particiantes"
-                    android:layout_row="1"
-                    android:layout_column="0"
-                    android:textColor="@color/blancoPrimario"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="30sp"
-                    />
-
-                <TextView
-                    android:id="@+id/titulo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="XXX.XX€"
-                    android:layout_row="2"
-                    android:layout_column="0"
-                    android:textColor="@color/blancoPrimario"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="20sp"
-                    />
-
-                <LinearLayout
-                    android:layout_row="3"
-                    android:layout_column="0"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp">
-                    <TextView
-                        android:id="@+id/titulo"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Balance:"
-                        android:textColor="@color/blancoPrimario"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:layout_marginLeft="20sp"
-                        />
-                    <TextView
-                        android:id="@+id/titulo"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="XXX.XX€"
-                        android:textColor="@color/blancoPrimario"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:layout_marginLeft="1sp"
-                        android:layout_marginRight="5sp"
-                        />
-                </LinearLayout>
-
-                <ImageView
-                    android:layout_row="0"
-                    android:layout_column="1"
-                    android:layout_rowSpan="4"
-                    android:src="@drawable/image"
-                    android:scaleType="fitCenter"
-                    android:adjustViewBounds="true"
-                    />
-
-                <LinearLayout
-                    android:layout_width="189dp"
-                    android:layout_height="match_parent"
-                    android:layout_row="0"
-                    android:layout_rowSpan="4"
-                    android:layout_column="1"
-                    android:layout_marginLeft="-1dp"
-                    app:layout_constraintEnd_toEndOf="parent">
-
-                    <View
-                        android:layout_width="149dp"
-                        android:layout_height="wrap_content"
-                        android:adjustViewBounds="true"
-                        android:background="@drawable/degradadonaranja"
-                        android:scaleType="fitCenter" />
-                </LinearLayout>
-
-
-            </GridLayout>
-        </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -568,7 +443,6 @@
                 app:cardElevation="8dp">
 
                 <GridLayout
-                    android:id="@+id/gridLayout"
                     android:layout_width="match_parent"
                     android:layout_height="fill_parent"
                     android:columnCount="2"
@@ -581,7 +455,7 @@
 
 
                     <TextView
-                        android:id="@+id/titulo"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="7dp"
@@ -591,10 +465,10 @@
                         android:textColor="@color/blancoPrimario"
                         android:textSize="20sp"
                         android:textStyle="bold"
-                        android:layout_marginLeft="20sp"
+                        android:layout_marginStart="20sp"
                         />
                     <TextView
-                        android:id="@+id/titulo"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -602,13 +476,13 @@
                         android:layout_row="1"
                         android:layout_column="0"
                         android:textColor="@color/blancoPrimario"
-                        android:textSize="15sp"
+                        android:textSize="11sp"
                         android:textStyle="bold"
-                        android:layout_marginLeft="30sp"
+                        android:layout_marginStart="30sp"
                         />
 
                     <TextView
-                        android:id="@+id/titulo"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -618,7 +492,7 @@
                         android:textColor="@color/blancoPrimario"
                         android:textSize="20sp"
                         android:textStyle="bold"
-                        android:layout_marginLeft="20sp"
+                        android:layout_marginStart="20sp"
                         />
 
                     <LinearLayout
@@ -628,25 +502,25 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp">
                         <TextView
-                            android:id="@+id/titulo"
+
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Balance:"
                             android:textColor="@color/blancoPrimario"
                             android:textSize="15sp"
                             android:textStyle="bold"
-                            android:layout_marginLeft="20sp"
+                            android:layout_marginStart="20sp"
                             />
                         <TextView
-                            android:id="@+id/titulo"
+
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="XXX.XX€"
                             android:textColor="@color/blancoPrimario"
                             android:textSize="15sp"
                             android:textStyle="bold"
-                            android:layout_marginLeft="1sp"
-                            android:layout_marginRight="5sp"
+                            android:layout_marginStart="1sp"
+                            android:layout_marginEnd="5sp"
                             />
                     </LinearLayout>
 
@@ -665,7 +539,7 @@
                         android:layout_row="0"
                         android:layout_rowSpan="4"
                         android:layout_column="1"
-                        android:layout_marginLeft="-1dp"
+                        android:layout_marginStart="-1dp"
                         app:layout_constraintEnd_toEndOf="parent">
 
                         <View
@@ -680,13 +554,135 @@
                 </GridLayout>
             </androidx.cardview.widget.CardView>
 
-            <Button
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="fill"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/naranjaPrimario"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:columnCount="2"
+                    android:rowCount="4"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.292">
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="Título"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:textColor="@color/blancoPrimario"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="20sp"
+                        />
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Particiantes"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        android:textColor="@color/blancoPrimario"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="30sp"
+                        />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="XXX.XX€"
+                        android:layout_row="2"
+                        android:layout_column="0"
+                        android:textColor="@color/blancoPrimario"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="20sp"
+                        />
+
+                    <LinearLayout
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Balance:"
+                            android:textColor="@color/blancoPrimario"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_marginStart="20sp"
+                            />
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="XXX.XX€"
+                            android:textColor="@color/blancoPrimario"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="1sp"
+                            android:layout_marginEnd="5sp"
+                            />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:layout_rowSpan="4"
+                        android:src="@drawable/image"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="189dp"
+                        android:layout_height="match_parent"
+                        android:layout_row="0"
+                        android:layout_rowSpan="4"
+                        android:layout_column="1"
+                        android:layout_marginStart="-1dp"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                        <View
+                            android:layout_width="149dp"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/degradadonaranja"
+                            android:scaleType="fitCenter" />
+                    </LinearLayout>
+
+
+                </GridLayout>
+            </androidx.cardview.widget.CardView>
+
+            <ImageButton
                 android:layout_width="100dp"
                 android:layout_height="50dp"
-                android:text="+"
+                android:src="@drawable/add"
+                app:tint="@color/blancoPrimario"
+                android:contentDescription="@string/anadir_nuevo_grupo"
                 android:layout_gravity="center_horizontal"
-                android:backgroundTint="@color/naranjaPrimario"
-                android:textSize="20dp"/>
+                android:backgroundTint="@color/naranjaPrimario"/>
 
 
     </LinearLayout>
