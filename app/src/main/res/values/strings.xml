@@ -49,4 +49,15 @@
     <string name="anadir_nuevo_grupo">Añadir nuevo grupo</string>
     <string name="anadir_nuevo_gasto_grupal">añadir nuevo gasto grupal</string>
     <string name="volver">volver</string>
+    <string name="deudores">Deudores:</string>
+    <string name="nombre">Nombre:</string>
+    <string name="nombre_hint">Nombre...</string>
+    <string name="importe">Importe:</string>
+    <string name="importe_hint">100€</string>
+    <string name="fecha">Fecha:</string>
+    <string name="fecha_hint">03/03/2023</string>
+    <string name="categoria">Categoría:</string>
+    <string name="ocio">OCIO</string>
+    <string name="escanear">ESCANEAR</string>
+    <string name="scroll_view_deudores">Jaimito\n\nFelipe\n\nPepito\n\nJorge</string>
 </resources>
