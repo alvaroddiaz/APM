@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".gastos">
+
+    <ImageButton
+        android:id="@+id/add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/cuadradonaranja"
+        android:contentDescription="@string/anadir_nuevo_gasto_grupal"
+        android:src="@drawable/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/blancoPrimario">
+
+    </ImageButton>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:gravity="center"
+                    android:paddingHorizontal="10dp">
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/cuadradonaranja"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/comida"
+                            app:tint="@color/blancoPrimario" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Concepto"
+                            android:textColor="@color/blancoPrimario"
+                            android:textSize="22sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="categoría"
+                            android:textColor="@color/naranjaPrimario"
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="XXX.XX€"
+                        android:textColor="@color/blancoPrimario"
+                        android:textSize="23sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:gravity="center"
+                    android:background="@drawable/fondofila"
+                    android:paddingHorizontal="10dp">
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/cuadradonaranja"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/viaje"
+                            app:tint="@color/blancoPrimario" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Concepto"
+                            android:textColor="@color/blancoPrimario"
+                            android:textSize="22sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="categoría"
+                            android:textColor="@color/naranjaPrimario"
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="XXX.XX€"
+                        android:textColor="@color/blancoPrimario"
+                        android:textSize="23sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:gravity="center"
+                    android:paddingHorizontal="10dp">
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/cuadradonaranja"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/casa"
+                            app:tint="@color/blancoPrimario" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Concepto"
+                            android:textColor="@color/blancoPrimario"
+                            android:textSize="22sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="categoría"
+                            android:textColor="@color/naranjaPrimario"
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="XXX.XX€"
+                        android:textColor="@color/blancoPrimario"
+                        android:textSize="23sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:gravity="center"
+                    android:background="@drawable/fondofila"
+                    android:paddingHorizontal="10dp">
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/cuadradonaranja"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/comida"
+                            app:tint="@color/blancoPrimario" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Concepto"
+                            android:textColor="@color/blancoPrimario"
+                            android:textSize="22sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="categoría"
+                            android:textColor="@color/naranjaPrimario"
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="XXX.XX€"
+                        android:textColor="@color/blancoPrimario"
+                        android:textSize="23sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:gravity="center"
+                    android:paddingHorizontal="10dp">
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/cuadradonaranja"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/ropa"
+                            app:tint="@color/blancoPrimario" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Concepto"
+                            android:textColor="@color/blancoPrimario"
+                            android:textSize="22sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="categoría"
+                            android:textColor="@color/naranjaPrimario"
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="XXX.XX€"
+                        android:textColor="@color/blancoPrimario"
+                        android:textSize="23sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:gravity="center"
+                    android:background="@drawable/fondofila"
+                    android:paddingHorizontal="10dp">
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/cuadradonaranja"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/casa"
+                            app:tint="@color/blancoPrimario" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Concepto"
+                            android:textColor="@color/blancoPrimario"
+                            android:textSize="22sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="categoría"
+                            android:textColor="@color/naranjaPrimario"
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="XXX.XX€"
+                        android:textColor="@color/blancoPrimario"
+                        android:textSize="23sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:gravity="center"
+                    android:paddingHorizontal="10dp">
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/cuadradonaranja"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/supermercado"
+                            app:tint="@color/blancoPrimario" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Concepto"
+                            android:textColor="@color/blancoPrimario"
+                            android:textSize="22sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="categoría"
+                            android:textColor="@color/naranjaPrimario"
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="XXX.XX€"
+                        android:textColor="@color/blancoPrimario"
+                        android:textSize="23sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:gravity="center"
+                    android:background="@drawable/fondofila"
+                    android:paddingHorizontal="10dp">
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/cuadradonaranja"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/supermercado"
+                            app:tint="@color/blancoPrimario" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Concepto"
+                            android:textColor="@color/blancoPrimario"
+                            android:textSize="22sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="categoría"
+                            android:textColor="@color/naranjaPrimario"
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="XXX.XX€"
+                        android:textColor="@color/blancoPrimario"
+                        android:textSize="23sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:gravity="center"
+                    android:paddingHorizontal="10dp">
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/cuadradonaranja"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/supermercado"
+                            app:tint="@color/blancoPrimario" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Concepto"
+                            android:textColor="@color/blancoPrimario"
+                            android:textSize="22sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="categoría"
+                            android:textColor="@color/naranjaPrimario"
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="XXX.XX€"
+                        android:textColor="@color/blancoPrimario"
+                        android:textSize="23sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:gravity="center"
+                    android:background="@drawable/fondofila"
+                    android:paddingHorizontal="10dp">
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/cuadradonaranja"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/supermercado"
+                            app:tint="@color/blancoPrimario" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Concepto"
+                            android:textColor="@color/blancoPrimario"
+                            android:textSize="22sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="categoría"
+                            android:textColor="@color/naranjaPrimario"
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="XXX.XX€"
+                        android:textColor="@color/blancoPrimario"
+                        android:textSize="23sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="413dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="300dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/grafico_circular"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="3dp" />
+
+    <GridLayout
+        android:id="@+id/toggle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/togglebackground"
+        android:columnCount="3"
+        android:rowCount="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:backgroundTint="@color/naranjaPrimario"
+            android:text="@string/personal"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="68dp" />
+
+        <Space android:layout_gravity="fill" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="3dp"
+            android:enabled="false"
+            android:text="@string/grupos"
+            android:textColor="@color/blancoPrimario"
+            tools:layout_editor_absoluteX="188dp"
+            tools:layout_editor_absoluteY="69dp" />
+
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
