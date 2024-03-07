@@ -60,4 +60,9 @@
     <string name="ocio">OCIO</string>
     <string name="escanear">ESCANEAR</string>
     <string name="scroll_view_deudores">Jaimito\n\nFelipe\n\nPepito\n\nJorge</string>
+    <string name="semana">Semana</string>
+    <string name="mes">Mes</string>
+    <string name="mes3">3 meses</string>
+    <string name="mes6">6 meses</string>
+    <string name="anio">Año</string>
 </resources>
