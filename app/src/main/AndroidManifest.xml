@@ -13,6 +13,9 @@
         android:theme="@style/Theme.APP"
         tools:targetApi="31">
         <activity
+            android:name=".estadisticas"
+            android:exported="false" />
+        <activity
             android:name=".gastos_grupo"
             android:exported="false" />
         <activity
