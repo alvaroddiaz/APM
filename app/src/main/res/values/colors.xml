@@ -4,4 +4,6 @@
     <color name="naranjaPrimario">#fc7e26</color>
     <color name="naranjaOscuro">#8F4816</color>
     <color name="blancoPrimario">#ffebde</color>
+    <color name="verdePositivo">#008000</color>
+    <color name="rojoNegativo">#FF0000</color>
 </resources>
