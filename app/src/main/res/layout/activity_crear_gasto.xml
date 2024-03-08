@@ -215,9 +215,8 @@
                             android:layout_width="34dp"
                             android:layout_height="36dp"
                             android:layout_gravity="center"
-                            android:src="@tools:sample/avatars"
-                            app:tint="@color/blancoPrimario"
-                            app:srcCompat="@drawable/ocio" />
+                            android:src="@drawable/ocio"
+                            app:tint="@color/blancoPrimario" />
 
                         <TextView
                             android:id="@+id/textView2"
@@ -253,8 +252,7 @@
                             android:id="@+id/imageView6"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@tools:sample/avatars"
-                            app:srcCompat="@android:drawable/ic_menu_camera" />
+                            android:src="@android:drawable/ic_menu_camera"/>
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
