@@ -155,7 +155,7 @@
                 <EditText
                     android:id="@+id/editTextText"
                     android:layout_width="140dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="48dp"
                     android:ems="10"
                     android:inputType="text"
                     android:text="@string/deudores"
@@ -216,7 +216,7 @@
                             android:layout_height="36dp"
                             android:layout_gravity="center"
                             android:src="@tools:sample/avatars"
-                            android:tint="@color/blancoPrimario"
+                            app:tint="@color/blancoPrimario"
                             app:srcCompat="@drawable/ocio" />
 
                         <TextView
