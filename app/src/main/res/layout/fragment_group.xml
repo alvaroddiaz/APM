@@ -4,55 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fondo"
-    tools:context=".Grupos">
-
-
-    <GridLayout
-        android:id="@+id/toggle"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:columnCount="3"
-        android:rowCount="1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/togglebackground"
-        >
-
-
-        <Button
-            android:id="@+id/button"
-            android:backgroundTint="@color/naranjaPrimario"
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:text="@string/personal"
-            tools:layout_editor_absoluteX="50dp"
-            tools:layout_editor_absoluteY="68dp"
-            android:layout_marginTop="3dp"
-            android:layout_marginBottom="3dp"
-            android:layout_marginStart="6dp"
-            />
-
-        <Space
-            android:layout_gravity="fill" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:text="@string/grupos"
-            tools:layout_editor_absoluteX="188dp"
-            tools:layout_editor_absoluteY="69dp"
-            android:enabled="false"
-            android:layout_marginTop="3dp"
-            android:layout_marginBottom="3dp"
-            android:layout_marginEnd="6dp"
-            android:textColor="@color/blancoPrimario"
-            />
-
-    </GridLayout>
+    android:background="@color/fondo">
 
     <ScrollView
         android:layout_width="wrap_content"
@@ -60,7 +12,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toggle"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.292">
 
 
@@ -685,7 +637,7 @@
                 android:backgroundTint="@color/naranjaPrimario"/>
 
 
-    </LinearLayout>
+        </LinearLayout>
 
     </ScrollView>
 

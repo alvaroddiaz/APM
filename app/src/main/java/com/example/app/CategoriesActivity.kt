@@ -3,9 +3,9 @@ package com.example.app
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class categorias : AppCompatActivity() {
+class CategoriesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_categorias)
+        setContentView(R.layout.activity_categories)
     }
 }

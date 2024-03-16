@@ -4,23 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fondo"
-    tools:context=".estadisticas">
-
-    <ImageButton
-        android:id="@+id/add"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/cuadradonaranja"
-        android:contentDescription="@string/anadir_nuevo_gasto_grupal"
-        android:src="@drawable/add"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:tint="@color/blancoPrimario">
-
-    </ImageButton>
+    android:background="@color/fondo">
 
     <ScrollView
         android:id="@+id/scrollView2"

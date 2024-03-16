@@ -2,27 +2,18 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_personal">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.app.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        android:id="@+id/navigation_personal"
+        android:name="com.example.app.PersonalFragment"
+        android:label="@string/personal"
+        tools:layout="@layout/fragment_personal" />
 
-        <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
-    </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.app.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
-
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-    </fragment>
+        android:id="@+id/navigation_group"
+        android:name="com.example.app.GroupFragment"
+        android:label="@string/groups"
+        tools:layout="@layout/fragment_group" />
 </navigation>

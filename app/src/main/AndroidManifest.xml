@@ -10,33 +10,24 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.APP"
+        android:theme="@style/Theme.APP.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".estadisticas"
-            android:exported="false" />
-        <activity
-            android:name=".gastos_grupo"
-            android:exported="false" />
-        <activity
-            android:name=".Grupos"
-            android:exported="false" />
-        <activity
-            android:name=".categorias"
-            android:exported="false" />
-        <activity
-            android:name=".crear_gasto"
-            android:exported="false" />
-        <activity
-            android:name=".gastos"
-            android:exported="true"
-            android:label="@string/title_activity_main"
-            android:theme="@style/Theme.APP">
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".GroupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StatsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CategoriesActivity"
+            android:exported="false" />
     </application>
-
 </manifest>
