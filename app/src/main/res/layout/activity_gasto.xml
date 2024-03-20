@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Nuevo Gasto"
+        android:textColor="#ffebde"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="40dp">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="Nombre"
+
+            android:textColorHint="@color/blancoPrimario"
+            app:boxBackgroundColor="@color/naranjaPrimario">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/importe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="Importe"
+            android:textColorHint="@color/blancoPrimario"
+            app:boxBackgroundColor="@color/naranjaPrimario">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_importe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="Fecha"
+            app:errorEnabled="true"
+            android:textColorHint="@color/blancoPrimario"
+            app:boxBackgroundColor="@color/naranjaPrimario">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_date_of_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayoutMembersDebt"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <EditText
+                android:id="@+id/editTextText"
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:inputType="text"
+                android:text="@string/deudores"
+                android:textColor="@color/blancoPrimario"
+                app:layout_gravity="center" />
+
+            <ScrollView
+                android:id="@+id/scrollViewDeudores"
+                android:layout_width="185dp"
+                android:layout_height="115dp"
+                android:background="@color/naranjaPrimario"
+                app:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/scroll_view_deudores"
+                    android:textColor="@color/blancoPrimario" />
+            </ScrollView>
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayoutCategory"
+            android:layout_width="match_parent"
+            android:layout_height="82dp">
+
+            <EditText
+                android:id="@+id/editTextText5"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="text"
+                android:text="@string/categoria"
+                android:textColor="@color/blancoPrimario" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="56dp"
+                android:layout_height="57dp"
+                app:cardBackgroundColor="@color/naranjaPrimario"
+                app:cardCornerRadius="20dp"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center"
+                app:layout_row="0"
+                app:layout_rowWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewOcio"
+                        android:layout_width="34dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ocio"
+                        app:tint="@color/blancoPrimario" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/ocio"
+                        android:textColor="@color/blancoPrimario" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.gridlayout.widget.GridLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/naranjaPrimario"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                app:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/add_a_photo"
+                        app:tint="@color/blancoPrimario" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/naranjaPrimario"
+            android:contentDescription="@string/anadir_nuevo_grupo"
+            android:text="Añadir"
+            android:textColor="@color/blancoPrimario" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

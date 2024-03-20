@@ -29,5 +29,8 @@
         <activity
             android:name=".CategoriesActivity"
             android:exported="false" />
+        <activity
+            android:name=".GastoActivity"
+            android:exported="false" />
     </application>
 </manifest>

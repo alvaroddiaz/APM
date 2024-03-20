@@ -13,44 +13,44 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="Añadir Categorías"
-        android:textColor="#ffebde"
+        android:textColor="@color/blancoPrimario"
         android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/et_simple"
-        android:layout_width="380dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="@color/naranjaPrimario"
-        android:hint="Introduce el nombre de la categoria"
-        android:lines="1"
-        android:maxLength="20"
-        android:maxLines="1"
-        android:textColor="@color/blancoPrimario"
-        android:textColorHint="@color/blancoPrimario"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Nombre"
+        app:boxBackgroundColor="@color/blancoPrimario"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <TextView
         android:id="@+id/icono"
         android:layout_width="89dp"
         android:layout_height="25dp"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="24dp"
         android:text="Icono"
         android:textColor="#ffebde"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintHorizontal_bias="0.012"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_simple" />
-
+        app:layout_constraintTop_toBottomOf="@+id/nombre" />
 
     <GridLayout
         android:id="@+id/gridLayout"
@@ -60,6 +60,7 @@
         android:columnCount="5"
         android:rowCount="4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/icono">
 
@@ -181,7 +182,6 @@
         </androidx.cardview.widget.CardView>
 
     </GridLayout>
-
 
     <TextView
         android:id="@+id/color"

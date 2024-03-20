@@ -16,4 +16,6 @@
         android:name="com.example.app.GroupFragment"
         android:label="@string/groups"
         tools:layout="@layout/fragment_group" />
+
+
 </navigation>

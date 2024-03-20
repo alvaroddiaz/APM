@@ -13,7 +13,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="?attr/actionBarSize"
         app:tabMode="fixed">
 
         <com.google.android.material.tabs.TabItem
