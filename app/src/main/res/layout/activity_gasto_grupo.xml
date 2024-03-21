@@ -81,6 +81,40 @@
                 android:inputType="date" />
         </com.google.android.material.textfield.TextInputLayout>
 
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayoutMembersDebt"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <EditText
+                android:id="@+id/editTextText"
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:inputType="text"
+                android:text="@string/deudores"
+                android:textColor="@color/blancoPrimario"
+                app:layout_gravity="center" />
+
+            <ScrollView
+                android:id="@+id/scrollViewDeudores"
+                android:layout_width="185dp"
+                android:layout_height="115dp"
+                android:background="@color/naranjaPrimario"
+                app:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/scroll_view_deudores"
+                    android:textColor="@color/blancoPrimario" />
+            </ScrollView>
+
+        </androidx.gridlayout.widget.GridLayout>
+
         <androidx.gridlayout.widget.GridLayout
             android:id="@+id/gridLayoutCategory"
             android:layout_width="match_parent"

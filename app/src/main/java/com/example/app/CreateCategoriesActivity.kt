@@ -16,7 +16,7 @@ class CreateCategoriesActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.addCategory.setOnClickListener {
-            Toast.makeText(this, "Crear categoria", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Crear categoría", Toast.LENGTH_SHORT).show()
         }
     }
 }

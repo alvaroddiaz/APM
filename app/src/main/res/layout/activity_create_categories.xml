@@ -26,7 +26,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:hint="Nombre"
-        app:boxBackgroundColor="@color/blancoPrimario"
+        android:textColorHint="@color/blancoPrimario"
+        app:boxBackgroundColor="@color/naranjaPrimario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView">
 

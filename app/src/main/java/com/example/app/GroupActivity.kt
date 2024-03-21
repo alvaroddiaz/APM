@@ -14,7 +14,7 @@ class GroupActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.add.setOnClickListener {
-            startActivity(Intent(this, GastoActivity::class.java))
+            startActivity(Intent(this, GastoGrupoActivity::class.java))
         }
     }
 }
