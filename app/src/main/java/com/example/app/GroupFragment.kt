@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.example.app.databinding.FragmentGroupBinding
 import com.example.app.databinding.FragmentPersonalBinding
 
@@ -34,6 +35,10 @@ class GroupFragment : Fragment() {
         binding.cardgroup.root.setOnClickListener {
             val intent = Intent(context, GroupActivity::class.java)
             startActivity(intent)
+        }
+
+        binding.addGroup.add.setOnClickListener {
+            Toast.makeText(context, "Añadir grupo", Toast.LENGTH_SHORT).show()
         }
 
         return binding.root

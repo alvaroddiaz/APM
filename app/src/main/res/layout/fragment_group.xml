@@ -25,6 +25,11 @@
         </LinearLayout>
 
     </ScrollView>
-    <include layout="@layout/boton_add"/>
+
+    <include
+        android:id="@+id/addGroup"
+        layout="@layout/boton_add"
+        tools:layout_editor_absoluteX="341dp"
+        tools:layout_editor_absoluteY="661dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

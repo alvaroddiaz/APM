@@ -181,7 +181,7 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/imageView6"
+                        android:id="@+id/openCamera"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:src="@drawable/add_a_photo"
@@ -192,10 +192,11 @@
 
 
         <Button
+            android:id="@+id/addGasto"
             android:layout_width="100dp"
-            android:layout_marginTop="20dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
             android:backgroundTint="@color/naranjaPrimario"
             android:contentDescription="@string/anadir_nuevo_grupo"
             android:text="Añadir"
