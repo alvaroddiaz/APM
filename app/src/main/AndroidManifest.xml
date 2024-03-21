@@ -32,5 +32,8 @@
         <activity
             android:name=".GastoActivity"
             android:exported="false" />
+        <activity
+            android:name=".CreateCategoriesActivity"
+            android:exported="false" />
     </application>
 </manifest>
