@@ -13,11 +13,9 @@ class ViewPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm, BEHAVIOR_
             else -> PersonalFragment()
         }
     }
-
     override fun getCount(): Int {
         return 2
     }
-
     override fun getPageTitle(position: Int): CharSequence? {
         return when (position) {
             0 -> "Personal"

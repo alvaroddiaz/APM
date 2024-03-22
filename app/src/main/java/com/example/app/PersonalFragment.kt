@@ -2,11 +2,10 @@ package com.example.app
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
+import androidx.fragment.app.Fragment
 import com.example.app.databinding.FragmentPersonalBinding
 
 private const val ARG_PARAM1 = "param1"
@@ -49,7 +48,6 @@ class PersonalFragment : Fragment() {
 
         return binding.root
     }
-
 
 
 }
